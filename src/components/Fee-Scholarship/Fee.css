@@ -1,0 +1,28 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  position: relative;
+  left: 50px;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 8px;
+}
+
+.view{
+    text-decoration: none;
+    color: black;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(235, 230, 222);
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+}

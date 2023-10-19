@@ -1,0 +1,24 @@
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+section h1{
+    text-align: center;
+    margin: 2rem;
+    color: rgb(243, 156, 18);
+    font-size:xx-large;
+    font-weight: bolder;
+    /* border-bottom: 4px solid rgb(255, 255, 0); */
+}
+
+section p{
+    text-align: center;
+    text-decoration: dotted;
+    width: 80%;
+    position: relative;
+    left: 130px;
+    margin: 10px;
+    font-weight: 600;
+}
