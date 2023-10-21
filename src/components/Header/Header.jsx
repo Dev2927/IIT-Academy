@@ -15,6 +15,11 @@ function Header() {
                 </NavLink>
               </li>
               <li>
+                <NavLink to="/iit">
+                  Why IIT-Academy?
+                </NavLink>
+              </li>
+              <li>
                 <NavLink to="/fee">
                   Fee & Scholarship
                 </NavLink>

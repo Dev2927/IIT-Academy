@@ -1,0 +1,41 @@
+.container-accordian{
+    /* background-color: #3d0c11; */
+    padding: 20px 100px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 3rem;
+}
+
+.container-accordian h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  color: black;
+}
+
+button {
+  background: rgb(211, 216, 253);
+  color: #3d0c11;
+  border: 2px solid #3d0c11;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 8px;
+}
+
+#accordion-two {
+  background-color: rgb(232, 199, 144);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  margin-right: 0px;
+  /* box-shadow: 4px 4px rgb(231, 197, 197); */
+}
+
+.accordion > div.closed {
+  margin-bottom: 20px;
+}
+

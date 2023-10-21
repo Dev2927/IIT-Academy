@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../../assets/main.png";
 import './About.css'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function About() {
   return (
@@ -11,7 +12,7 @@ function About() {
       <div className="about">
         <h1>About</h1>
         <p>
-          XYZ Course is specially designed for giving an early advantage to the
+          - XYZ Course is specially designed for giving an early advantage to the
           students by starting JEE Advanced preparation immediately after 10th
           Board Examination. The course lays special emphasis on the
           fundamentals for relevant to the syllabus and pattern of JEE (Main +
@@ -20,7 +21,7 @@ function About() {
           competitive exams like Olympiads etc.
         </p>
         <p>
-          Students joining this program have more time to clear their
+          - Students joining this program have more time to clear their
           fundamentals and practice extensively for JEE (Advanced), their
           ultimate goal!
         </p>

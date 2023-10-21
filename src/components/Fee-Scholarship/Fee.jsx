@@ -9,7 +9,7 @@ function Fee() {
       <section>
         <h1>FEE Structure</h1>
         <div className="table">
-          <h2>Engineering Division</h2>
+          <h2>i) Engineering Division</h2>
           <table>
             <thead>
               <tr>
@@ -59,7 +59,7 @@ function Fee() {
           </table>
         </div>
         <div>
-          <h2>Medical Deivison</h2>
+          <h2>ii) Medical Deivison</h2>
           <table>
             <thead>
               <tr>
@@ -109,7 +109,7 @@ function Fee() {
           </table>
         </div>
         <div>
-          <h2>Foundation Division</h2>
+          <h2>iii) Foundation Division</h2>
           <table>
             <thead>
               <tr>

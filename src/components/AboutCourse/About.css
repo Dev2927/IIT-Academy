@@ -6,7 +6,7 @@
 
 section h1{
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
     color: rgb(243, 156, 18);
     font-size:xx-large;
     font-weight: bolder;
@@ -19,6 +19,8 @@ section p{
     width: 80%;
     position: relative;
     left: 130px;
-    margin: 10px;
-    font-weight: 600;
+    margin: 20px;
+    font-weight: bolder;
+    color: black;
+
 }

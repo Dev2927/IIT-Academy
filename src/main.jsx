@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./components/AboutCourse/About.jsx";
 import Fee from "./components/Fee-Scholarship/Fee.jsx";
 import Benefits from "./components/Course-Benefits/Benefits.jsx";
+import WhyIIT from './components/WhyIIT/WhyIIT.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <About />,
+      },
+      {
+        path: "/iit",
+        element: <WhyIIT />,
       },
       {
         path: "/fee",
