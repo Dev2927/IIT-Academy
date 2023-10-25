@@ -36,4 +36,71 @@ section p {
 .heading-details {
   text-align: center;
   border-bottom: 1px solid black;
+  /* color: rgb(243, 156, 18); */
+}
+
+.heading-box {
+  position: relative;
+  left: 50px;
+  margin: 6px;
+}
+
+.table-head {
+  background-color: rgb(177, 225, 177);
+}
+
+.details-para {
+  position: relative;
+  left: 20px;
+}
+
+.scholar-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box-ul {
+  position: relative;
+  top: 30px;
+}
+
+.scholar-head {
+  position: relative;
+  left: 30px;
+  /* color: rgb(18, 37, 243); */
+}
+
+.btn-two {
+  position: relative;
+  top: 15px;
+  background-color: rgb(48, 145, 48);
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 6px;
+  height: 35px;
+}
+
+.scholar {
+  position: relative;
+  left: 50px;
+  /* color: rgb(18, 37, 243); */
+}
+
+.btn-one {
+  background-color: rgb(48, 145, 48);
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 3px;
+  height: 30px;
+}
+
+.apply-btn {
+  position: relative;
+  top: 80px;
+  left: 450px;
+  background-color: rgb(79, 79, 244);
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 4px;
+  height: 30px;
 }

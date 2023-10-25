@@ -2,7 +2,6 @@ import React from "react";
 import img from "../../assets/main.png";
 import "./About.css";
 import { Link } from "react-router-dom";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function About() {
   return (
@@ -32,16 +31,16 @@ function About() {
         <h2 className="heading-details">Fee & Scholarship Details</h2>
 
         <div className="detail-box">
-          Fee Structure For Course (1 Year)
+          <h5 className="heading-box">Fee Structure For Course (1 Year)</h5>
           <table>
             <thead>
               <tr>
-                <th>Admission + infra. + study material free</th>
-                <th>Tution Fee(TF)</th>
-                <th>Caution Money</th>
-                <th>Gross Total Fee (if paid in inst.)</th>
-                <th>1st inst.</th>
-                <th>2nd inst.</th>
+                <th className="table-head">Admission + infra. + study material free</th>
+                <th className="table-head">Tution Fee(TF)</th>
+                <th className="table-head">Caution Money</th>
+                <th className="table-head">Gross Total Fee (if paid in inst.)</th>
+                <th className="table-head">1st inst.</th>
+                <th className="table-head">2nd inst.</th>
               </tr>
             </thead>
             <tbody>
@@ -55,7 +54,7 @@ function About() {
               </tr>
             </tbody>
           </table>
-          <p>
+          <p className="details-para">
             1st Installment is 60% of the total fee & 2nd Installment is 40% in
             Single Year Course. 1st Installment at the time of admission while
             2nd installment on or before 60 days of course commencement. For
@@ -63,9 +62,9 @@ function About() {
             them to submit a Post Dated Cheque (PDC) of the remaining
             installment.
           </p>
-          <div>
-            <h1>Scholarship Criteria</h1>
-            <ul>
+          <div className="scholar-box">
+            <h3 className="scholar-head">Scholarship Criteria</h3>
+            <ul className="box-ul">
               <li>
                 Scholarship based on <b>Board Exam Marks.</b>
               </li>
@@ -74,12 +73,15 @@ function About() {
               </li>
               <li>
                 To Know More
-                <Link to='/fee'>
-                  <button>Click Here</button>
+                <Link to="/fee">
+                  <button className="btn-one">Click Here</button>
                 </Link>
               </li>
             </ul>
+            <h3 className="scholar">Scholarship Test Details</h3>
+            <button className="btn-two">View Details</button>
           </div>
+          <button className="apply-btn">Apply Online</button>
         </div>
       </div>
     </section>
