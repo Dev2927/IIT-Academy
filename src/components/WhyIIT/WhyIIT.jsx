@@ -19,7 +19,7 @@ function Question({ question }) {
     <section className="accordion">
       <div className={open ? "open" : "closed"} id="accordion-two">
         <h2>{question.title}</h2>
-        <button onClick={() => setOpen(!open)}>{open ? "-" : "+"}</button>
+        <button onClick={() => setOpen(!open)} className="btns">{open ? "-" : "+"}</button>
       </div>
       {open && <p className="accordion-para">{contentWithLineBreaks}</p>}
     </section>

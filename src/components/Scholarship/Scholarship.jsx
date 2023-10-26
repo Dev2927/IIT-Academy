@@ -4,7 +4,7 @@ import './Scholarship.css'
 
 function Scholarship() {
   return (
-    <section>
+    <section className='section'>
         <h1>Scholarship Criteria</h1>
         <div className="table">
           <h2>i) Based on 10-12 boards percentage</h2>
@@ -81,7 +81,7 @@ function Scholarship() {
             </tbody>
           </table>
         </div>
-        <div>
+        <div className='table'>
           <h2>ii) Based on JEE Main Percentile</h2>
           <table>
             <thead>

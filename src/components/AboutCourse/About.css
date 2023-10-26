@@ -1,106 +1,133 @@
-.image {
+.about-container {
+  overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
+  align-items: center;
+  /* padding: 15px; */
 }
 
-section h1 {
-  text-align: center;
-  margin: 1rem;
-  color: rgb(243, 156, 18);
-  font-size: xx-large;
-  font-weight: bolder;
-  /* border-bottom: 4px solid rgb(255, 255, 0); */
+.image img {
+  max-width: 100%;
 }
 
-section p {
+.about-content {
+  /* flex: 1; */
+  max-width: 600px;
+  padding: 20px;
   text-align: center;
-  text-decoration: dotted;
-  width: 80%;
-  position: relative;
-  left: 130px;
-  margin: 20px;
-  font-weight: bolder;
-  color: black;
 }
 
 .details {
+  /* flex: 1; */
+  max-width: 600px;
+  padding: 20px;
   border: 2px solid black;
-  width: 80%;
-  height: 500px;
-  position: relative;
-  left: 105px;
-  margin: 20px;
+}
+
+.details-para{
+  padding: 15px;
 }
 
 .heading-details {
   text-align: center;
   border-bottom: 1px solid black;
-  /* color: rgb(243, 156, 18); */
+  margin: 1px;
 }
 
-.heading-box {
-  position: relative;
-  left: 50px;
-  margin: 6px;
+.heading-box{
+  margin: 8px;
 }
 
-.table-head {
-  background-color: rgb(177, 225, 177);
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin: 4px;
 }
 
-.details-para {
-  position: relative;
-  left: 20px;
+.fees-table th{
+  background-color: rgb(174, 235, 174);
+}
+
+.fees-table th,
+.fees-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid black;
 }
 
 .scholar-box {
+  margin-top: 15px;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: 4px;
 }
 
-.box-ul {
-  position: relative;
-  top: 30px;
+.scholars-box{
+  display: flex;
+  justify-content: right ;
+  /* justify-content:first baseline; */
 }
 
-.scholar-head {
-  position: relative;
-  left: 30px;
-  /* color: rgb(18, 37, 243); */
-}
-
-.btn-two {
-  position: relative;
-  top: 15px;
-  background-color: rgb(48, 145, 48);
+.buttn{
+  background-color: green;
   color: white;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 6px;
-  height: 35px;
-}
-
-.scholar {
-  position: relative;
-  left: 50px;
-  /* color: rgb(18, 37, 243); */
-}
-
-.btn-one {
-  background-color: rgb(48, 145, 48);
-  color: white;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 3px;
-  height: 30px;
-}
-
-.apply-btn {
-  position: relative;
-  top: 80px;
-  left: 450px;
-  background-color: rgb(79, 79, 244);
-  color: white;
-  border: 1px solid rgb(0, 0, 0);
   padding: 4px;
-  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.apply{
+  display: flex;
+  justify-content: center;
+}
+
+.apply-btn{
+  background-color: rgb(71, 71, 251);
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+  border: 1px solid black;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+}
+
+
+@media (min-width: 768px) {
+  .about-container {
+    padding: 40px;
+  }
+  .about-content, .details {
+    max-width: 700px;
+    padding: 30px;
+  }
+  .fee-table th, .fee-table td {
+    padding: 15px;
+  }
+  .btn {
+    margin: 15px;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 1200px) {
+  .about-container {
+    padding: 60px;
+  }
+  .about-content, .details {
+    max-width: 800px;
+    padding: 40px;
+  }
+  .fee-table th, .fee-table td {
+    padding: 20px;
+  }
+  .btn {
+    margin: 20px;
+  }
 }

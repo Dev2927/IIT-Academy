@@ -6,9 +6,9 @@ import Scholarship from "../Scholarship/Scholarship";
 function Fee() {
   return (
     <>
-      <section>
+      <section className="fee-section">
         <h1>FEE Structure</h1>
-        <div className="table">
+        <div className="fee-table">
           <h2>i) Engineering Division</h2>
           <table>
             <thead>
@@ -58,7 +58,7 @@ function Fee() {
             </tbody>
           </table>
         </div>
-        <div>
+        <div className="fee-table">
           <h2>ii) Medical Deivison</h2>
           <table>
             <thead>
@@ -108,7 +108,7 @@ function Fee() {
             </tbody>
           </table>
         </div>
-        <div>
+        <div className="fee-table">
           <h2>iii) Foundation Division</h2>
           <table>
             <thead>
