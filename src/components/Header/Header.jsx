@@ -25,6 +25,9 @@ function Header() {
               <li>
                 <NavLink to="/coursebenefits">Course-Benefits</NavLink>
               </li>
+              <li>
+                <NavLink to="/contact">Contact Us</NavLink>
+              </li>
             </ul>
           </div>
 
