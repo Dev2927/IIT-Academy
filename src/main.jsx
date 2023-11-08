@@ -8,6 +8,7 @@ import Fee from "./components/Fee-Scholarship/Fee.jsx";
 import Benefits from "./components/Course-Benefits/Benefits.jsx";
 import WhyIIT from './components/WhyIIT/WhyIIT.jsx'
 import Contact from "./components/Contact/Contact.jsx";
+import Home from "./components/Home/Home.jsx"
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
         element: <About />,
       },
       {

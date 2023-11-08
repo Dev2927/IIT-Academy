@@ -14,7 +14,10 @@ function Header() {
           <div className="nav-list">
             <ul className="nav-item">
               <li>
-                <NavLink to="/">About-Course</NavLink>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">About-Course</NavLink>
               </li>
               <li>
                 <NavLink to="/iit">Why IIT-Academy?</NavLink>
@@ -30,7 +33,6 @@ function Header() {
               </li>
             </ul>
           </div>
-
         </div>
       </nav>
     </header>

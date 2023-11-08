@@ -1,0 +1,26 @@
+.home-accordion {
+  padding: 20px;
+  max-width: 1100px; /* Adjust the max width as per your design */
+  margin: 10px auto; /* Center the content */
+  background: linear-gradient(#FFFBF5,#FFFBF5,#F7EFE5); /* A light background color */
+}
+
+.accordion-heading {
+  text-align: center;
+  color: #333; /* Dark text color for better readability */
+  margin: 1.5rem 0; /* Slightly reduce the margin */
+}
+
+.accordion-ques {
+  text-align: center;
+  padding: 4px 20px ;
+  color: #333; /* Dark text color */
+  width: 100%;
+  margin: 10px 0;
+}
+
+.accordion-ans {
+  text-align: center;
+  padding: 10px 0 20px 0;
+  color: #333; /* Dark text color */
+}
