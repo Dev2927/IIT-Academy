@@ -1,72 +1,58 @@
-/* Improved CSS for "Why IIT Academy?" Page */
 
-/* Container Styles */
-.container-accordian {
+
+
+/* .container-accordian {
   padding: 20px;
-  max-width: 1100px; /* Adjust the max width as per your design */
-  margin: 0 auto; /* Center the content */
-  background-color: #f5f5f5; /* A light background color */
-}
+  max-width: 1100px;
+  margin: 0 auto; 
+  background-color: #f5f5f5; 
+} */
 
 /* Heading Styles */
-h1 {
+/* h1 {
   text-align: center;
-  color: #333; /* Dark text color for better readability */
-  margin: 1.5rem 0; /* Slightly reduce the margin */
-}
+  color: #333; 
+  margin: 1.5rem 0; 
+} */
 
 /* Question Title Styles */
-.container-accordian h2 {
+/* .container-accordian h2 {
   text-align: center;
   padding: 10px 0 20px 0;
-  color: #333; /* Dark text color */
-}
+  color: #333; 
+} */
 
 /* Button Styles */
-.btns {
-  background: #3483eb; /* A primary color for buttons */
-  color: #fff; /* White text for better contrast */
-  border: none; /* Remove border */
+/* .btns {
+  background: #3483eb; 
+  color: #fff; 
+  border: none; 
   border-radius: 5px;
   font-size: 20px;
-  padding: 8px 16px; /* Increase padding for a better touch target */
+  padding: 8px 16px; 
   margin: 8px;
-  cursor: pointer; /* Show a pointer cursor on hover */
-}
+  cursor: pointer; 
+} */
 
 /* Accordion Container Styles */
-#accordion-two {
-  background-color: #f5f5f5; /* Use the same background color as the container */
+/* #accordion-two {
+  background-color: #f5f5f5; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px; /* Add more padding for better spacing */
-  border: 1px solid #ccc; /* Add a subtle border */
+  padding: 10px 20px; 
+  border: 1px solid #ccc; 
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight box-shadow for depth */
-  transition: background-color 0.3s; /* Smooth transition for background color change */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s; 
 
   &:hover {
-    background-color: #e0e0e0; /* Lighten the background on hover */
+    background-color: #e0e0e0; 
   }
-}
+} */
 
 /* Closed Accordion Styles */
-.accordion > div.closed {
+/* .accordion > div.closed {
   margin-bottom: 20px;
-}
+} */
 
-/* Media Query for Responsive Design (adjust breakpoints as needed) */
-@media (max-width: 768px) {
-  .container-accordian {
-    padding: 10px; /* Reduce padding for smaller screens */
-  }
-
-  h1 {
-    font-size: 24px; /* Reduce the font size for smaller screens */
-  }
-
-  .container-accordian h2 {
-    font-size: 18px; /* Reduce font size for question titles */
-  }
-}

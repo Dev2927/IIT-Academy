@@ -1,19 +1,18 @@
 /* Improve the overall layout and responsiveness */
-.fee-section {
+/* .fee-section {
   width: 100%;
   max-width: 1000px;
   margin: 10px auto;
   padding: 40px;
-}
+} */
 
 /* Style the tables */
-.fee-table {
+/* .fee-table {
   font-family: Arial, sans-serif;
   width: 100%;
   margin: 20px 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  /* overflow: hidden; */
 }
 
 .fee-table table {
@@ -34,31 +33,18 @@
 
 .fee-table tr:nth-child(even) {
   background-color: rgb(235, 230, 222);
-}
+} */
 
 /* Style the "View" links */
-.view {
+/* .view {
   text-decoration: none;
   color: black;
-}
+} */
 
 /* Center the h2 headings */
-.fee-table h2 {
+/* .fee-table h2 {
   text-align: center;
   margin: 20px;
   padding: 5px;
-}
+} */
 
-@media (max-width: 768px) {
-  .table {
-    width: 100%;
-    left: 0;
-  }
-}
-
-/* Additional responsive styles for even smaller screens */
-@media (max-width: 480px) {
-  .table {
-    font-size: 80%;
-  }
-}
