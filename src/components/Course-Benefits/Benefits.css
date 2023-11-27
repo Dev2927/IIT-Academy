@@ -1,4 +1,4 @@
-/* body {
+body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 }
@@ -100,4 +100,30 @@ p {
 
 .box:hover {
   border-color: blue;
-} */
+}
+
+/* CSS for responsivness starts from here */
+
+@media screen and (max-width: 650px) {
+  .box{
+    width: calc(25% - 25px);
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .box{
+    width: calc(35% - 35px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .box{
+    width: calc(45% - 45px);
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .box{
+    width: calc(45% - 45px);
+  }
+}

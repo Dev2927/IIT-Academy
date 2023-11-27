@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Slider */}
       <div className="slider-container">
-      <p className="slide-heading">Popular Courses</p>
+      {/* <p className="slide-heading">Popular Courses</p> */}
         <Swiper
           spaceBetween={30}
           centeredSlides={true}

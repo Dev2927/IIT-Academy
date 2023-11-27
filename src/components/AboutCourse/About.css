@@ -1,28 +1,36 @@
-/* .about-container {
+.about-container {
   overflow: hidden;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .image img {
-  max-width: 100%;
+  width: 100%;
+  height: 80vh;
 }
 
 .about-content {
   max-width: 600px;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .details {
-  max-width: 600px;
+  width: 80%;
   padding: 20px;
   border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
-.details-para{
+.details-para {
   padding: 15px;
 }
 
@@ -32,7 +40,7 @@
   margin: 1px;
 }
 
-.heading-box{
+.heading-box {
   margin: 8px;
 }
 
@@ -43,7 +51,7 @@
   margin: 4px;
 }
 
-.fees-table th{
+.fees-table th {
   background-color: rgb(174, 235, 174);
 }
 
@@ -62,12 +70,12 @@
   margin: 4px;
 }
 
-.scholars-box{
+.scholars-box {
   display: flex;
-  justify-content: right ;
+  justify-content: right;
 }
 
-.buttn{
+.buttn {
   background-color: green;
   color: white;
   padding: 4px;
@@ -76,12 +84,12 @@
   margin: 3px;
 }
 
-.apply{
+.apply {
   display: flex;
   justify-content: center;
 }
 
-.apply-btn{
+.apply-btn {
   background-color: rgb(71, 71, 251);
   color: white;
   border-radius: 5px;
@@ -92,4 +100,53 @@
 .btn {
   display: inline-block;
   margin: 10px;
-} */
+}
+
+/* CSS for responsivness */
+
+@media screen and (max-width: 680px) {
+  .fees-table th,
+  .fees-table td{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fees-table th,
+  .fees-table td{
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .fees-table th,
+  .fees-table td{
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .fees-table th,
+  .fees-table td{
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fees-table th,
+  .fees-table td{
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .fees-table th,
+  .fees-table td{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+  }
+  .details{
+    width: 70%;
+  }
+}

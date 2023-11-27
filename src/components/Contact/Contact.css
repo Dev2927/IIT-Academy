@@ -1,18 +1,18 @@
-/* .contact-img {
+.contact-img {
   width: 100%;
   height: 500px;
   z-index: 0;
-} */
+}
 
 /* Main Container */
 
-/* .main-container {
+.main-container {
   display: flex;
-} */
+}
 
 /* Form container */
 
-/* .first-container {
+.first-container {
   width: 60%;
   height: 800px;
   background-color: rgb(232, 154, 30);
@@ -74,11 +74,11 @@ label {
   border-radius: 12px;
   margin-left: 20px;
   font-weight: bolder;
-} */
+}
 
 /* Contact Container */
 
-/* .second-container {
+.second-container {
   position: relative; 
   bottom: 80px; 
 }
@@ -115,11 +115,11 @@ label {
   color: white;
   margin: 10px 0;
   padding: 5px 55px;
-} */
+}
 
 /* Location Container */
 
-/* .location-page {
+.location-page {
   background-color: #cfe8ef;
   width: 80%;
   height: 280px;
@@ -159,10 +159,10 @@ label {
 .location-page a {
   color: white;
   text-decoration: none;
-} */
+}
 
 /* Campus container */
-/* .campus-page{
+.campus-page{
   display: flex;
   justify-content: right;
   position: relative;
@@ -173,4 +173,4 @@ label {
 .campus-img{
   width: 40.5%;
   height: 300px;
-} */
+}

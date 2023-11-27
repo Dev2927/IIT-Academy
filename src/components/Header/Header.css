@@ -70,7 +70,7 @@
   border-radius: 8px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   .mobMenu {
     display: flex;
     margin-left: 260px;

@@ -1,4 +1,4 @@
-/* .home-img {
+.home-img {
   display: flex;
   justify-content: center;
 }
@@ -6,11 +6,11 @@
 .home-img img {
   width: 100%;
   height: 80vh;
-} */
+}
 
 /* Slider Starts from here */
 
-/* .slider-container{
+.slider-container {
   height: 100vh;
   width: 100%;
   color: white;
@@ -19,18 +19,18 @@
 .mySwiper {
   width: 100%;
   height: 100%;
-  background: linear-gradient(#3282B8,#1B262C,#1B262C);
+  background: linear-gradient(#3282b8, #1b262c, #1b262c);
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px; 
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-} */ 
+}
 
-/* .swiper-slide {
+.swiper-slide {
   width: 60%;
 }
 
@@ -45,22 +45,22 @@
 .slider {
   border: 2px solid rgb(0, 162, 255);
   width: 28%;
-  height: 500px;
+  height: 530px;
   margin: 20px 0;
-  background-color:#0F4C75;
-  box-shadow: 2px 2px 5px #0F4C75;
-  transition: all 0.2s
+  background-color: #0f4c75;
+  box-shadow: 2px 2px 5px #0f4c75;
+  transition: all 0.2s;
 }
 
-.slider:hover{
+.slider:hover {
   transform: translateY(-2px);
   transition: transform 0.2s;
-  box-shadow: 0 2px 30px #0F4C75;
+  box-shadow: 0 2px 30px #0f4c75;
 }
 
 .slider-img {
   height: 160px;
-  width:45%;
+  width: 45%;
   padding: 20px 0;
 }
 
@@ -69,11 +69,11 @@
   font-size: xx-large;
 }
 
-.slide-heading{
+.slide-heading {
   text-align: center;
   font-size: 40px;
   margin: 0px 0;
-  background-color: #3282B8;
+  background-color: #3282b8;
   height: 0px;
   color: white;
   padding: 10px;
@@ -89,14 +89,60 @@
   width: 70%;
 }
 
-.slider-btns{
+.slider-btns {
   border: none;
   border-radius: 5px;
   padding: 10px;
   color: rgb(0, 0, 0);
-  background-color: #BBE1FA;
-  margin-top: 50px;
+  background-color: #bbe1fa;
+  margin-top: 10px;
   cursor: pointer;
-} */
+}
 
 /* Slider ends here */
+/* Responsive css starts from here */
+
+@media screen and (max-width: 1000px) {
+  .slider{
+    width: 40%;
+  }
+  .slider-btns{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .slider{
+    width: 50%;
+  }
+  .slider-btns{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .slider{
+    width: 60%;
+  }
+  .slider-btns{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .slider{
+    width: 70%;
+  }
+  .slider-btns{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .slider{
+    width: 75%;
+  }
+  .slider-btns{
+    margin-top: 20px;
+  }
+}
