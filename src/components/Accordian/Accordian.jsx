@@ -3,7 +3,7 @@ import { Accordion } from "keep-react";
 import { CaretDown, CaretUp } from "phosphor-react";
 import "./Accordian.css";
 
-export const AccordionComponent = () => {
+export default function AccordionComponent() {
   return (
     <Accordion
       openIcon={<CaretUp />}
@@ -138,4 +138,4 @@ export const AccordionComponent = () => {
       </Accordion.Panel>
     </Accordion>
   );
-};
+}
