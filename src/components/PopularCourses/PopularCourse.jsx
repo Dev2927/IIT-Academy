@@ -46,7 +46,10 @@ function PopularCourse() {
         of their academic growth by bringing out their latent potential
       </p>
       <div className="course">
-        <div onClick={() => activeTab(1)} className="course-btn course-btns radius">
+        <div
+          onClick={() => activeTab(1)}
+          className="course-btn course-btns radius"
+        >
           Engineering
         </div>
         <div onClick={() => activeTab(2)} className="course-btn course-btns">
@@ -58,19 +61,26 @@ function PopularCourse() {
         <div onClick={() => activeTab(4)} className="course-btn course-btns">
           Distance Learning
         </div>
-        <div onClick={() => activeTab(5)} className="course-btn course-btns radius1">
+        <div
+          onClick={() => activeTab(5)}
+          className="course-btn course-btns radius1"
+        >
           Boards
         </div>
       </div>
-      <div>
-        {data && data.map((value) => {
-          return (
-            <div>
-              <span>{value.title}</span>
-              <span>{value.description}</span>
-            </div>
-          )
-        })}
+      <div className="detail-box">
+        {data &&
+          data.map((value) => {
+            return (
+              <div className="card-detail">
+                <img src={value.img} width="300px" height="300px" />
+                <p className="details-desc">{value.description}</p>
+                <div className="details-btns">
+                  <button className="details-btn">Details</button>
+                </div>
+              </div>
+            );
+          })}
       </div>
     </div>
   );

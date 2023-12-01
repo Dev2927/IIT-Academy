@@ -1,10 +1,10 @@
 .course-container {
-  background-color: rgb(245, 245, 245);
+  /* background-color: rgb(245, 245, 245); */
 }
 
-.course{
-    display: flex;
-    justify-content: center;
+.course {
+  display: flex;
+  justify-content: center;
 }
 
 .course-heading {
@@ -29,6 +29,12 @@
   color: white;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.course-btns:active{
+  background-color: #fff;
+  color: black;
 }
 
 .radius1 {
@@ -39,4 +45,45 @@
 .radius {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+}
+
+/* Card starts from here */
+.detail-box {
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px 50px;
+}
+
+.card-detail {
+  overflow: hidden;
+  margin: 20px auto;
+  height: 270px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-detail:hover{
+  box-shadow: 1px 1px 16px rgba(0, 0, 0);
+}
+
+.details-desc {
+  text-align: center;
+  font-size: large;
+}
+
+.details-btns {
+  display: flex;
+  justify-content: right;
+}
+
+.details-btn {
+  background-color: rgb(249, 148, 23);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 14px;
+  border-radius: 5px;
+  cursor: pointer;
 }
