@@ -66,6 +66,7 @@ function PopularCourse() {
         {data && data.map((value) => {
           return (
             <div>
+              <span>{value.title}</span>
               <span>{value.description}</span>
             </div>
           )
