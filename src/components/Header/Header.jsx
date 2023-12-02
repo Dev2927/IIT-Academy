@@ -19,6 +19,9 @@ function Header() {
                 <NavLink to="/about">About-Course</NavLink>
               </li>
               <li className="desktopMenuListItem">
+                <NavLink to="/resources">Resources</NavLink>
+              </li>
+              <li className="desktopMenuListItem">
                 <NavLink to="/iit">Why IIT-Academy?</NavLink>
               </li>
               <li className="desktopMenuListItem">

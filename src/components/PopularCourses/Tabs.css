@@ -32,7 +32,7 @@
   cursor: pointer;
 }
 
-.course-btns:active{
+.course-btns:active {
   background-color: #fff;
   color: black;
 }
@@ -49,7 +49,6 @@
 
 /* Card starts from here */
 .detail-box {
-
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 50px 50px;
@@ -64,7 +63,7 @@
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.card-detail:hover{
+.card-detail:hover {
   box-shadow: 1px 1px 16px rgba(0, 0, 0);
 }
 
@@ -86,4 +85,26 @@
   margin: 14px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.img-previous {
+  width: 40px;
+  height: 40px;
+}
+
+.img-next {
+  width: 40px;
+  height: 40px;
+}
+
+.img-prev {
+  border: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.img-nex {
+  border: none;
 }

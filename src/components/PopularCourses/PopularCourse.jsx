@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./Tabs.css";
 import { courseData } from "../PopularCourses/CourseData";
+import previous from "../../assets/previous.png";
+import next from "../../assets/next.png";
 
 function PopularCourse() {
   const [tab, setTab] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
 
   function activeTab(tabNumber) {
     setTab(tabNumber);
+    setCurrentPage(1);
   }
 
   const engineer = courseData.filter((course) => course.item === "engineering");
@@ -37,6 +41,20 @@ function PopularCourse() {
       : tab === 5
       ? boards
       : null;
+
+  const pageSize = 3;
+  const totalPageCount = Math.ceil(data.length / pageSize);
+
+  const handlePrevious = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  };
+
+  const handleNext = () => {
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPageCount));
+  };
+
+  const startIndex = (currentPage - 1) * pageSize;
+  const visibleData = data && data.slice(startIndex, startIndex + pageSize);
 
   return (
     <div className="course-container">
@@ -69,11 +87,16 @@ function PopularCourse() {
         </div>
       </div>
       <div className="detail-box">
-        {data &&
-          data.map((value) => {
+        {visibleData &&
+          visibleData.map((value, index) => {
             return (
-              <div className="card-detail">
-                <img src={value.img} width="300px" height="300px" />
+              <div key={index} className="card-detail">
+                <img
+                  src={value.img}
+                  alt={value.description}
+                  width="300px"
+                  height="300px"
+                />
                 <p className="details-desc">{value.description}</p>
                 <div className="details-btns">
                   <button className="details-btn">Details</button>
@@ -81,6 +104,20 @@ function PopularCourse() {
               </div>
             );
           })}
+        {data && data.length > pageSize && (
+          <div className="slider-buttons">
+            {currentPage > 1 && (
+              <button onClick={handlePrevious} className="img-prev">
+                <img src={previous} alt="Prev Img.." className="img-previous"/>
+              </button>
+            )}
+            {currentPage < totalPageCount && (
+              <button onClick={handleNext} className="img-nex">
+                <img src={next} alt="Next Img" className="img-next"/>
+              </button>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

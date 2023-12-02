@@ -6,9 +6,10 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./components/AboutCourse/About.jsx";
 import Fee from "./components/Fee-Scholarship/Fee.jsx";
 import Benefits from "./components/Course-Benefits/Benefits.jsx";
-import WhyIIT from './components/WhyIIT/WhyIIT.jsx'
+import WhyIIT from "./components/WhyIIT/WhyIIT.jsx";
 import Contact from "./components/Contact/Contact.jsx";
-import Home from "./components/Home/Home.jsx"
+import Home from "./components/Home/Home.jsx";
+import Resources from "./components/Resources/Resources.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/resources",
+        element: <Resources />,
       },
       {
         path: "/iit",
