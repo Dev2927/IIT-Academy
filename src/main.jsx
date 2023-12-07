@@ -10,6 +10,14 @@ import WhyIIT from "./components/WhyIIT/WhyIIT.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Home from "./components/Home/Home.jsx";
 import Resources from "./components/Resources/Resources.jsx";
+import JeeMain from "./Pages/Jee-main/JeeMain.jsx";
+import JeeAdv from "./Pages/Jee-adv/JeeAdv.jsx";
+import Neet from "./Pages/Neet/Neet.jsx";
+import Boards from "./Pages/Boards/Boards.jsx";
+import KVPY from "./Pages/KVPY/KVPY.jsx";
+import NCERT from "./Pages/NCERT/NCERT.jsx";
+import Other from "./Pages/Other/Other.jsx";
+import MainContent from "./Pages/Jee-main/mainContent/MainContent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +51,38 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/jeemain",
+        element: <JeeMain />,
+      },
+      {
+        path: "/jeeadv",
+        element: <JeeAdv />,
+      },
+      {
+        path: "/neet",
+        element: <Neet />,
+      },
+      {
+        path: "/boards",
+        element: <Boards />,
+      },
+      {
+        path: "/kvpy",
+        element: <KVPY />,
+      },
+      {
+        path: "/ncert",
+        element: <NCERT />,
+      },
+      {
+        path: "/other",
+        element: <Other />,
+      },
+      {
+        path: "/maincontent",
+        element: <MainContent />,
       },
     ],
   },

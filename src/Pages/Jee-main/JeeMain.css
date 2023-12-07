@@ -1,12 +1,12 @@
-.resources-container {
+.jee-main {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   background-color: #fff;
 }
 
-.resources-card {
-  height: 300px;
-  width: 300px;
+.jeemain-btn {
+  height: 220px;
+  width: 220px;
   margin: 40px 0;
   margin-inline-start: 80px;
   background-color: #fefefe;
@@ -15,6 +15,6 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.resources-card:hover {
-  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+.jeemain-btn:hover{
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
 }

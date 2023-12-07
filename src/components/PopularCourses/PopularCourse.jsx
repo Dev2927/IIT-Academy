@@ -14,19 +14,9 @@ function PopularCourse() {
   }
 
   const engineer = courseData.filter((course) => course.item === "engineering");
-
-  const medicalCourse = courseData.filter(
-    (course) => course.item === "medical"
-  );
-
-  const foudations = courseData.filter(
-    (course) => course.item === "foundation"
-  );
-
-  const distanceLearning = courseData.filter(
-    (course) => course.item === "distance"
-  );
-
+  const medicalCourse = courseData.filter((course) => course.item === "medical");
+  const foudations = courseData.filter((course) => course.item === "foundation");
+  const distanceLearning = courseData.filter((course) => course.item === "distance");
   const boards = courseData.filter((course) => course.item === "board");
 
   const data =
@@ -54,7 +44,8 @@ function PopularCourse() {
   };
 
   const startIndex = (currentPage - 1) * pageSize;
-  const visibleData = data && data.slice(startIndex, startIndex + pageSize);
+  const endIndex = startIndex + pageSize;
+  const visibleData = data && data.slice(startIndex, endIndex);
 
   return (
     <div className="course-container">
@@ -104,21 +95,21 @@ function PopularCourse() {
               </div>
             );
           })}
-        {data && data.length > pageSize && (
-          <div className="slider-buttons">
-            {currentPage > 1 && (
-              <button onClick={handlePrevious} className="img-prev">
-                <img src={previous} alt="Prev Img.." className="img-previous"/>
-              </button>
-            )}
-            {currentPage < totalPageCount && (
-              <button onClick={handleNext} className="img-nex">
-                <img src={next} alt="Next Img" className="img-next"/>
-              </button>
-            )}
-          </div>
-        )}
       </div>
+      {data && data.length > pageSize && (
+        <div className="slider-buttons">
+          {currentPage > 1 && (
+            <button onClick={handlePrevious} className="img-prev">
+              <img src={previous} alt="Prev Img.." className="img-previous" />
+            </button>
+          )}
+          {currentPage < totalPageCount && (
+            <button onClick={handleNext} className="img-nex">
+              <img src={next} alt="Next Img" className="img-next" />
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }
