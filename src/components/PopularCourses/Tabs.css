@@ -109,3 +109,76 @@
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
+
+/* CSS for responsivness */
+
+@media screen and (max-width: 1200px) {
+  .card-detail{
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-detail{
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .card-detail{
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card-detail{
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card-detail{
+    height: 260px;
+  }
+  .course-btns{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-detail{
+    height: 260px;
+  }
+  .course-btns{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .detail-box{
+    width: 70%;
+  }
+  .card-detail{
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .detail-box{
+    width: 70%;
+  }
+  .card-detail{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .detail-box{
+    width: 70%;
+  }
+  .card-detail{
+    height: 270px;
+  }
+}

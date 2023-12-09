@@ -137,6 +137,7 @@ function PopularCourse() {
                     alt={value.description}
                     width="400px"
                     height="300px"
+                    className="card-img"
                   />
                   <div className="details-btns">
                     <p className="details-desc">{value.description}</p>
