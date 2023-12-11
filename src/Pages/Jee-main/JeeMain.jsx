@@ -42,51 +42,91 @@ function JeeMain() {
         <div>
           <button
             className="jeemain-btn"
-            onClick={() =>  navigate("./maincontent")}
+            onClick={() => {
+              navigate("/maincontent");
+              activeTab(1);
+            }}
           >
             <h1>2017</h1>
           </button>
         </div>
         <div>
-          <button className="jeemain-btn" onClick={() => activeTab(2)}>
+          <button
+            className="jeemain-btn"
+            onClick={() => {
+              navigate("/maincontent");
+              activeTab(2);
+            }}
+          >
             <h1>2018</h1>
           </button>
         </div>
         <div>
-          <button className="jeemain-btn" onClick={() => activeTab(3)}>
+          <button
+            className="jeemain-btn"
+            onClick={() => {
+              navigate("/maincontent");
+              activeTab(3);
+            }}
+          >
             <h1>2019</h1>
           </button>
         </div>
         <div>
-          <button className="jeemain-btn" onClick={() => activeTab(4)}>
+          <button
+            className="jeemain-btn"
+            onClick={() => {
+              navigate("/maincontent");
+              activeTab(4);
+            }}
+          >
             <h1>2020</h1>
           </button>
         </div>
         <div>
-          <button className="jeemain-btn" onClick={() => activeTab(5)}>
+          <button
+            className="jeemain-btn"
+            onClick={() => {
+              navigate("/maincontent");
+              activeTab(5);
+            }}
+          >
             <h1>2021</h1>
           </button>
         </div>
         <div>
-          <button className="jeemain-btn" onClick={() => activeTab(6)}>
+          <button
+            className="jeemain-btn"
+            onClick={() => {
+              navigate("/maincontent");
+              activeTab(6);
+            }}
+          >
             <h1>2022</h1>
           </button>
         </div>
         <div>
-          <button className="jeemain-btn" onClick={() => activeTab(7)}>
+          <button
+            className="jeemain-btn"
+            onClick={() => {
+              navigate("/maincontent");
+              activeTab(1);
+            }}
+          >
             <h1>2023</h1>
           </button>
         </div>
       </div>
-      {jeeData.map((value, index) => {
-        return (
-          <div key={index}>
-            <button>
-              <h1>{value.title}</h1>
-            </button>
-          </div>
-        );
-      })}
+      {jeeData &&
+        jeeData.map((value, index) => {
+          return (
+            <div key={index}>
+              <button>
+                <h1>{value.title}</h1>
+              </button>
+            </div>
+          );
+        })}
     </>
   );
 }
