@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import "./JeeMain.css";
 import { jeeMainData } from "./JeeMainData";
 import { useNavigate } from "react-router-dom";
+import seventeen from '../../assets/2017.png';
+import eight from '../../assets/2018.png'
+import nine from '../../assets/2019.png'
+import ten from '../../assets/2020.png'
+import one from '../../assets/2021.png'
+import two from '../../assets/2022.png'
+import three from '../../assets/2023.png'
 
 function JeeMain() {
   const navigate = useNavigate();
@@ -47,7 +54,7 @@ function JeeMain() {
               activeTab(1);
             }}
           >
-            <h1>2017</h1>
+            <img src={seventeen} alt="Seven"/>
           </button>
         </div>
         <div>
@@ -58,7 +65,7 @@ function JeeMain() {
               activeTab(2);
             }}
           >
-            <h1>2018</h1>
+            <img src={eight} alt="Seven"/>
           </button>
         </div>
         <div>
@@ -69,7 +76,7 @@ function JeeMain() {
               activeTab(3);
             }}
           >
-            <h1>2019</h1>
+            <img src={nine} alt="Seven"/>
           </button>
         </div>
         <div>
@@ -80,7 +87,7 @@ function JeeMain() {
               activeTab(4);
             }}
           >
-            <h1>2020</h1>
+            <img src={ten} alt="Sten"/>
           </button>
         </div>
         <div>
@@ -91,7 +98,7 @@ function JeeMain() {
               activeTab(5);
             }}
           >
-            <h1>2021</h1>
+            <img src={one} alt="one"/>
           </button>
         </div>
         <div>
@@ -102,7 +109,7 @@ function JeeMain() {
               activeTab(6);
             }}
           >
-            <h1>2022</h1>
+            <img src={two} alt="two"/>
           </button>
         </div>
         <div>
@@ -113,7 +120,7 @@ function JeeMain() {
               activeTab(1);
             }}
           >
-            <h1>2023</h1>
+            <img src={three} alt="three"/>
           </button>
         </div>
       </div>

@@ -18,6 +18,7 @@ import KVPY from "./Pages/KVPY/KVPY.jsx";
 import NCERT from "./Pages/NCERT/NCERT.jsx";
 import Other from "./Pages/Other/Other.jsx";
 import MainContent from "./Pages/Jee-main/mainContent/MainContent.jsx";
+import NeetContent from "./Pages/Neet/neetContent/NeetContent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -83,6 +84,10 @@ const router = createBrowserRouter([
       {
         path: "/maincontent",
         element: <MainContent />,
+      },
+      {
+        path: "/neetcontent",
+        element: <NeetContent />
       },
     ],
   },

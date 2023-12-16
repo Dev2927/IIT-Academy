@@ -1,12 +1,13 @@
 .jee-main {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   background-color: #fff;
 }
 
 .jeemain-btn {
-  height: 220px;
-  width: 220px;
+  overflow: hidden;
+  height: 169px;
+  width: 320px;
   margin: 40px 0;
   margin-inline-start: 80px;
   background-color: #fefefe;
