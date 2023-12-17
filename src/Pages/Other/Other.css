@@ -1,0 +1,20 @@
+.others-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.others-card {
+  background-image: url("https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1702771200&semt=ais");
+  overflow: hidden;
+  height: 170px;
+  width: 250px;
+  margin: 40px 0;
+  margin-inline-start: 80px;
+  border-radius: 10px;
+  border: 1px solid rgb(222, 222, 222);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.others-card:hover {
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+}

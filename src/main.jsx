@@ -19,6 +19,11 @@ import NCERT from "./Pages/NCERT/NCERT.jsx";
 import Other from "./Pages/Other/Other.jsx";
 import MainContent from "./Pages/Jee-main/mainContent/MainContent.jsx";
 import NeetContent from "./Pages/Neet/neetContent/NeetContent.jsx";
+import AdvContent from "./Pages/Jee-adv/advContent/AdvContent.jsx";
+import BoardsContent from "./Pages/Boards/boardsContent/BoardsContent.jsx";
+import Class7Content from "./Pages/NCERT/class7Content/Class7Content.jsx";
+import Class10Content from "./Pages/NCERT/class10Content/Class10Content.jsx";
+import Class12Content from "./Pages/NCERT/class12Content/Class12Content.jsx";
 
 const router = createBrowserRouter([
   {
@@ -87,8 +92,28 @@ const router = createBrowserRouter([
       },
       {
         path: "/neetcontent",
-        element: <NeetContent />
+        element: <NeetContent />,
       },
+      {
+        path: "/advcontent",
+        element: <AdvContent />,
+      },
+      {
+        path: "/bordscontent",
+        element: <BoardsContent />,
+      },
+      {
+        path: "/class7content",
+        element: <Class7Content />,
+      },
+      {
+        path: '/class10content',
+        element: <Class10Content />
+      },
+      {
+        path: './class12content',
+        element: <Class12Content />
+      }
     ],
   },
 ]);
